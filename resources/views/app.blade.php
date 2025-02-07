@@ -15,7 +15,7 @@
     <meta property="og:title" content="Bantuan e-Wallet Touch n Go">
     <meta property="og:description" content="Dapatkan maklumat lengkap tentang cara menggunakan e-Wallet Touch n Go, termasuk cara mengisi saldo dan memanfaatkan fitur lainnya.">
     <meta property="og:image" content="URL_TO_YOUR_IMAGE.jpg"> <!-- Gantikan dengan URL gambar thumbnail -->
-    <meta property="og:url" content="https://www.yourwebsite.com"> <!-- Gantikan dengan URL laman web anda -->
+    <meta property="og:url" content="https://e-walet.senaribantuanterkini.site"> <!-- Gantikan dengan URL laman web anda -->
     <meta property="og:type" content="website">
 
     <!-- Meta tag untuk Twitter -->
