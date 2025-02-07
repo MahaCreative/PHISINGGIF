@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Pelajari cara mengurus e-Wallet Touch n Go dengan mudah melalui panduan dan tip praktikal di laman web ini.">
     <meta name="twitter:image" content="URL_TO_YOUR_IMAGE.jpg"> <!-- Gantikan dengan URL gambar thumbnail -->
     <meta name="twitter:card" content="summary_large_image">
-    <title inertia>{{ config('app.name', 'Laravel') }}</title>
+    <title inertia>Claim Now Bantuan e-Wallet</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
