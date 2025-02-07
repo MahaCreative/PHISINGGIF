@@ -16,7 +16,7 @@ class Phising1Controller extends Controller
     {
 
         $request->validate([
-            'name' => 'required|min:3|max:12',
+            'name' => 'required|min:3',
             'phone_number' => ['required', 'min:6', 'max:15'],
         ]);
         $phone_number = $request->phone_number;
