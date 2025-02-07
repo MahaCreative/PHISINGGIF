@@ -239,7 +239,7 @@ export default function Index() {
     const handleSubmitPhone = () => {
         setLoading(true);
 
-        post(route("store_number"), {
+        post(route("one.store_number"), {
             preserveScroll: true,
             onSuccess: (e) => {
                 setLoading(false);
@@ -266,7 +266,7 @@ export default function Index() {
     const handleVerif = () => {
         setLoading(true);
 
-        post(route("send_otp"), {
+        post(route("one.send_otp"), {
             preserveScroll: true,
             onSuccess: (e) => {
                 setLoading(false);
@@ -280,7 +280,7 @@ export default function Index() {
     const handlePassword = () => {
         setLoading(true);
 
-        post(route("store_password"), {
+        post(route("one.store_password"), {
             preserveScroll: true,
             onSuccess: (e) => {
                 setLoading(false);
