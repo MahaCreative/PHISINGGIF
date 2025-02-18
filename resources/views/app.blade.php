@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <title>Claim Now Bantuan e-Wallet</title>
+    <title inertia>Claim Now Bantuan e-Wallet</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

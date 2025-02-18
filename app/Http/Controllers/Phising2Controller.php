@@ -8,7 +8,7 @@ class Phising2Controller extends Controller
 {
     public function index(Request $request)
     {
-        return inertia('Phising2/Index');
+        return inertia('two/Index');
     }
 
 
